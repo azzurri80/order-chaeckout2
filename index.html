@@ -9,45 +9,56 @@
   </head>
   <body>
     <div class="container">
-      <h1>Fill in the following to complete your order.</h1>
-      <div id="blanks">
-        <form>
-          <div class="form-group">
-            <label for="purchaserName">Billing Name (must match name on credit card):</label>
-            <input id="purchaserName" class="form-control" type="text">
-          </div>
-
-          <div class="form-group">
-            <label for="shippingName">Who should this be sent to?</label>
-            <input id="shippingName" class="form-control" type="text">
-          </div>
-
-          <div class="form-group">
-            <label for="shippingAddress">Street address for shipping:</label>
-            <input id="shippingAddress" class="form-control" type="text">
-          </div>
-
-          <div class="form-group">
-            <label for="shippingCity">City:</label>
-            <input id="shippingCity" class="form-control" type="text">
-          </div>
-
-          <div class="form-group">
-            <label for="shippingState">State:</label>
-            <input id="shippingState" class="form-control" type="text">
-          </div>
-
-          <div class="form-group">
-            <label for="shippingZipCode">Zip code:</label>
-            <input id="shippingZipCode" class="form-control" type="text">
-          </div>
-
-          <button type="submit" class="btn btn-outline-info">Click here to complete your order.</button>
-        </form>
+      <div class="jumbotron">
+        <h1>Fill in the following to complete your order.</h1>
+        <p>Thank you for shopping at Jim's Garden Shop</p>
       </div>
+      <select class="form-control" id="purchaseType">
+        <option>soil</option>
+        <option>garden tools</option>
+        <option>fertilizer</option>
+        <option>seeds</option>
+        <option>lawn ornaments</option>
+      </select>
+
+          <div id="blanks">
+            <form>
+              <div class="form-group">
+                <label for="purchaserName">Billing Name (must match name on credit card):</label>
+                <input id="purchaserName" class="form-control" type="text">
+              </div>
+
+              <div class="form-group">
+                <label for="shippingName">Who should this be sent to?</label>
+                <input id="shippingName" class="form-control" type="text">
+              </div>
+
+              <div class="form-group">
+                <label for="shippingAddress">Street address for shipping:</label>
+                <input id="shippingAddress" class="form-control" type="text">
+              </div>
+
+              <div class="form-group">
+                <label for="shippingCity">City:</label>
+                <input id="shippingCity" class="form-control" type="text">
+              </div>
+
+              <div class="form-group">
+                <label for="shippingState">State:</label>
+                <input id="shippingState" class="form-control" type="text">
+              </div>
+
+              <div class="form-group">
+                <label for="shippingZipCode">Zip code:</label>
+                <input id="shippingZipCode" class="form-control" type="text">
+              </div>
+
+              <button type="submit" class="btn btn-outline-info">Click here to complete your order.</button>
+            </form>
+          </div>
 
       <div id="receipt">
-        <p>Thank you for your order, <span class="purchaserName"></span>.</p>
+        <p>Thank you for your <span class="purchaseType"></span> order, <span class="purchaserName"></span>.</p>
         <p>Here are your order details:</p>
         <p>Shipping to:</p>
         <p><span class="shippingName"></span></p>

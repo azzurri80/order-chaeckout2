@@ -1,3 +1,15 @@
 #receipt {
   display: none;
 }
+
+.jumbotron {
+  background-color: #00BCD9;
+  color: #2C3E50;
+}
+  .container {
+    background-color: #ecf0f1;
+  }
+
+button {
+  margin: 10px;
+}

@@ -6,13 +6,14 @@ $(document).ready(function() {
     var shippingCityInput = $("input#shippingCity").val();
     var shippingStateInput = $("input#shippingState").val();
     var shippingZipCodeInput = $("input#shippingZipCode").val();
-
+    var purchaseTypeInput = $("#purchaseType").val();
     $(".purchaserName").text(purchaserNameInput);
     $(".shippingName").text(shippingNameInput);
     $(".shippingAddress").text(shippingAddressInput);
     $(".shippingCity").text(shippingCityInput);
     $(".shippingState").text(shippingStateInput);
     $(".shippingZipCode").text(shippingZipCodeInput);
+    $(".purchaseType").text(purchaseTypeInput);
 
     $("#receipt").show();
 
